@@ -19,3 +19,4 @@ updb2();
 // finish update of database
 console.log("updb2 success.");
 console.log("Main processing");
+// just for testing
