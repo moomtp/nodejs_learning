@@ -6,16 +6,19 @@ function updb1(){
 updb1();
 // finish update of database
 console.log("updb1 success.");
-console.log("Main processing")
+console.log("Main processing1")
+
 
 // non-blocking processing
 function updb2(done) {
     setTimeout(()=>{
-        done();
+        null;
     }, 3000);
 }
 
-updb2();
+updb2(function(){
+    console.log("updb2 success.")
+});
 // finish update of database
-console.log("updb2 success.");
-console.log("Main processing");
+updb2();
+console.log("Main processing2");

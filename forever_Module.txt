@@ -1,0 +1,13 @@
+伺服器管理套件 forever
+
+$ [sudo] npm install forever -g  // 全域安裝forever
+
+$ forever -help
+
+$ forever list          // 列出正在運行的nodejs
+
+$ forever start app.js   // 啟動想要運行的js黨
+
+$ forever stopall      // 停止全部
+
+$ forever stop app.js      // 停止
